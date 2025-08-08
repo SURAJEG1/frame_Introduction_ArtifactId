@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class LoginPageObject {
 
-	WebDriver driver; // variable 
+	WebDriver driver; // local variable 
 	public LoginPageObject(WebDriver driver) // Constructor
 	{
 		this.driver=driver;
