@@ -10,37 +10,38 @@ import reusableAbstractComponent.AbstractComponent;
 
 public class LoginPageObject extends AbstractComponent{
 
-	WebDriver driver; // local variable 
-	public LoginPageObject(WebDriver driver) // Constructor
-	{
+	// local variable
+	WebDriver driver;
+	// Constructor
+	public LoginPageObject(WebDriver driver) {
 		super(driver);
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-
+	
+	//Find WebElements of Login page.
 	@FindBy(id="email") WebElement email;
 	@FindBy(name="pass") WebElement pass;
 	@FindBy(name="login") WebElement lg_button;
 	
-	
-	public void openLoginPage()     // Method
-	{
-		
-	driver.get("https://www.facebook.com");
-	max();
+
+	//Action Method for operations
+	public void openLoginPage() {
+		driver.get("https://www.facebook.com");
+		max();
 	}
 
-	public void doLogin()          // Method
-	{
-		
+	// Action Method for operations
+	public void doLogin() {
 		email.sendKeys("xyz@gmail.com");
 		pass.sendKeys("1234");
 		lg_button.click();
 	}
 
-	public void launchedAndLogin(String username,String password)  //Method... Pass parameter username & password.
-	{
+	// Action Method for operations... Pass parameter username & password.
+	public void launchedAndLogin(String username,String password) {
 		driver.get("https://www.facebook.com");
+		max();
 		email.sendKeys(username);
 		pass.sendKeys(password);
 		lg_button.click();
@@ -49,11 +50,11 @@ public class LoginPageObject extends AbstractComponent{
 
 
 
-	
-	
-	
-	
-	
+
+
+
+
+
 
 
 }

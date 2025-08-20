@@ -7,14 +7,14 @@ public class Listener implements ITestListener{
 	
 	public void onTestSuccess(ITestResult pass)
 	{
-		System.out.println(pass.getMethod().getMethodName()+" successfully executed");
+		System.out.println(pass.getMethod().getMethodName()+" Successfully Executed");
 	}
 	
 	
 	
 	public void onTestFailure(ITestResult failed)
 	{
-		System.out.println(failed.getMethod().getMethodName()+" got failed & ScreenShot Captured");
+		System.out.println(failed.getMethod().getMethodName()+" Got Failed & ScreenShot Captured");
 		System.out.println(failed.getThrowable());
 	}
 	
