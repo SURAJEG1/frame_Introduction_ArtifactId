@@ -9,25 +9,30 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObject.LoginPageObject;
+import utilities.ScreenshotUtility;
 
 public class LoginTest extends BasicTestComponent{
 
 	@Test
 	public void tc001() throws IOException {
-		
-		loginTestPossitive(); 
-		
-		
+
+		loginTestPossitive();
+
+		ScreenshotUtility screenshot=new ScreenshotUtility(driver);
+		screenshot.takeScreenshot(driver);
+
+
+
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
 }

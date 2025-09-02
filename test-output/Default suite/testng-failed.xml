@@ -5,7 +5,7 @@
     <classes>
       <class name="testScripts.LoginTest">
         <methods>
-          <include name="tc002"/>
+          <include name="tc001"/>
         </methods>
       </class> <!-- testScripts.LoginTest -->
     </classes>
