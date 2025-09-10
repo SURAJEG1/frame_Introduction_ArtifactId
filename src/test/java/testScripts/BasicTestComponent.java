@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.v136.page.model.Screenshot;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import excelDriven.ExcelReadData;
 import pageObject.LoginPageObject;
 import utilities.ScreenshotUtility;
 
@@ -36,8 +37,6 @@ public class BasicTestComponent {
 			
 		}
 		
-		
-	
 		
 		
 		
